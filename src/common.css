@@ -1,0 +1,250 @@
+/* Palette Colors 
+    White (Isabelline): #F0EDEE  
+    Black : #0A090C;
+    Dark Green: #07393C;
+    Light Green: #2C666E;
+    Middle Blue: #90DDF0;      
+*/
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Roboto:wght@400;500;700&display=swap");
+body {
+  background-color: #f0edee;
+  color: #0a090c;
+  font-family: "Roboto", sans-serif;
+}
+/* Intro - Welcome - Screen */
+.game-menu-screen {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-screen-title {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  font-family: "Otomanopee One", sans-serif;
+  color: #07393c;
+}
+.btn,
+.outline-btn {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.outline-btn {
+  border: 2px solid;
+  color: inherit;
+}
+.primary-outline-btn {
+  border-color: #2c666e;
+  color: #2c666e;
+}
+.primary-outline-btn:hover,
+.primary-outline-btn:active {
+  background-color: #2c666e;
+  color: #fff;
+}
+
+.primary-btn {
+  background-color: #2c666e;
+  color: #f0edee;
+}
+.primary-btn:hover,
+.primary-btn:active {
+  background-color: #235158;
+}
+.secondary-btn {
+  background-color: #8b2635;
+  color: #f0edee;
+}
+.secondary-btn:hover,
+.secondary-btn:active {
+  background-color: #701f2b;
+}
+.white-btn {
+  background-color: #f0edee;
+  color: #0a090c;
+}
+.white-btn:hover {
+  background-color: #dad3d5;
+}
+.start-btn,
+.rules-btn,
+.records-btn {
+  margin: 7px 0px;
+  /* width: 100%; */
+}
+/* In GAME */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+.balloon-to-pop-toolbar,
+.switching-balloon-in-toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.balloon-to-pop-title,
+.switching-balloon-in-title,
+.switching-balloon-in-time {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #07393c;
+}
+.balloon-to-pop {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: inherit;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 0.5rem;
+}
+.switching-balloon-in-time {
+  color: #0a090c;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+.settings {
+  color: #2f6b75;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.settings:hover {
+  color: #235158;
+}
+.balloons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.balloons-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.75rem 0;
+}
+.balloon,
+.balloon-popped {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin: 0 8px;
+  background-color: transparent;
+}
+.balloon-popped {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  /* color: #c7bcbf;
+  color: #07393c;
+  color: #701f2b;
+  color: #c2cc00; */
+}
+.balloon {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.black-balloon {
+  background-color: #0a090c;
+  color: #0a090c;
+}
+.white-balloon {
+  background-color: #f0edee;
+  color: #c7bcbf;
+}
+.green-balloon {
+  background-color: #07393c;
+  color: #07393c;
+}
+.red-balloon {
+  background-color: #701f2b;
+  color: #701f2b;
+}
+.yellow-balloon {
+  background-color: #f7ff58;
+  color: #c2cc00;
+}
+
+/* Game Stats */
+.game-stats-screen {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.game-stats-header {
+  text-align: center;
+}
+.game-stats-header,
+.balloon-stats {
+  margin: 1.5rem 0;
+}
+.game-stats-summary {
+  margin: 2rem 0;
+}
+.game-stats-summary p {
+  margin: 10px;
+}
+.total-popped,
+.lost-balloons {
+  font-weight: 500;
+}
+.game-stats-title,
+.new-record-title {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+.new-record-title {
+  color: #07393c;
+}
+.game-stats-ended-in-title,
+.balloons-popped-title {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+.time {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.balloon-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.balloon-stat {
+  text-align: center;
+}
+.balloon-stat-quantity {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.btn-container {
+  text-align: center;
+}
+.btn-container .btn {
+  margin: 1rem;
+}
+.balloons-stats {
+  width: 512px;
+}
