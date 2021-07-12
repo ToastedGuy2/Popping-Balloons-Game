@@ -1,6 +1,6 @@
 /* Palette Colors 
     White (Isabelline): #F0EDEE  
-    Black : #0A090C;
+    dark : #0A090C;
     Dark Green: #07393C;
     Light Green: #2C666E;
     Middle Blue: #90DDF0;      
@@ -19,85 +19,19 @@ body {
   align-items: center;
   justify-content: center;
 }
-.game-menu-screen-content {
+.menu-screen {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
 }
-.menu-screen-title {
+.menu-screen__title {
   margin: 1rem 0;
   font-size: 2.5rem;
   font-family: "Otomanopee One", sans-serif;
   color: #07393c;
   text-align: center;
 }
-.btn-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-.btn,
-.outline-btn {
-  font-size: 1rem;
-  font-family: "Roboto", sans-serif;
-  cursor: pointer;
-  padding: 1rem 2rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-.outline-btn {
-  border: 2px solid;
-  color: inherit;
-  margin: 7px 0px;
-}
-.primary-outline-btn {
-  border-color: #2c666e;
-  color: #2c666e;
-}
-.primary-outline-btn:hover,
-.primary-outline-btn:active {
-  background-color: #2c666e;
-  color: #fff;
-}
-.secondary-outline-btn {
-  border-color: #8b2635;
-  color: #8b2635;
-}
-.secondary-outline-btn:hover,
-.secondary-outline-btn:active {
-  background-color: #8b2635;
-  color: #fff;
-}
 
-.primary-btn {
-  background-color: #2c666e;
-  color: #f0edee;
-}
-.primary-btn:hover,
-.primary-btn:active {
-  background-color: #235158;
-}
-.secondary-btn {
-  background-color: #8b2635;
-  color: #f0edee;
-}
-.secondary-btn:hover,
-.secondary-btn:active {
-  background-color: #701f2b;
-}
-.white-btn {
-  background-color: #f0edee;
-  color: #0a090c;
-}
-.white-btn:hover {
-  background-color: #dad3d5;
-}
-.start-btn,
-.rules-btn,
-.records-btn {
-  margin: 7px 0px;
-  /* width: 100%; */
-}
 /* In GAME */
 .toolbar {
   display: flex;
@@ -145,7 +79,7 @@ body {
 }
 
 .balloon,
-.balloon-popped {
+.popped-balloon {
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -153,38 +87,49 @@ body {
   margin: 25px;
   background-color: transparent;
 }
-.balloon-popped {
+.popped-balloon {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  /* color: #c7bcbf;
+}
+.popped-light-balloon {
+  color: #c7bcbf;
+}
+.popped-green-balloon {
   color: #07393c;
+}
+.popped-red-balloon {
   color: #701f2b;
-  color: #c2cc00; */
+}
+.popped-yellow-balloon {
+  color: #c2cc00;
+}
+.popped-dark-balloon {
+  color: #0a090c;
 }
 .balloon {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.black-balloon {
-  background-color: #0a090c;
-  color: #0a090c;
+.primary-balloon {
+  background-color: #2f6b75;
+  color: #2f6b75;
 }
-.white-balloon {
-  background-color: #f0edee;
-  color: #c7bcbf;
-}
-.green-balloon {
-  background-color: #07393c;
-  color: #07393c;
-}
-.red-balloon {
+.secondary-balloon {
   background-color: #701f2b;
   color: #701f2b;
 }
 .yellow-balloon {
   background-color: #f7ff58;
   color: #c2cc00;
+}
+.dark-balloon {
+  background-color: #0a090c;
+  color: #0a090c;
+}
+.light-balloon {
+  background-color: #f0edee;
+  color: #c7bcbf;
 }
 
 /* Game Stats */
@@ -292,7 +237,8 @@ body {
     margin-top: 20px;
     max-width: 325px;
   }
-  .balloon {
+  .balloon,
+  .popped-balloon {
     margin: 10px 8px;
     height: 50px;
     width: 50px;
@@ -316,7 +262,8 @@ body {
   .balloons {
     max-width: 375px;
   }
-  .balloon {
+  .balloon,
+  .popped-balloon {
     margin: 12px;
   }
 }

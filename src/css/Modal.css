@@ -20,15 +20,6 @@
   width: 24rem;
   border-radius: 0.5rem;
 }
-.close-button {
-  float: right;
-  width: 1.5rem;
-  line-height: 1.5rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  background-color: lightgray;
-}
 
 .close-button:hover {
   background-color: darkgray;
@@ -54,6 +45,8 @@
   border-radius: 50%;
   cursor: pointer;
   color: #fff;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 .modal__content__header__close-btn:hover,
 .modal__content__header__close-btn:active {

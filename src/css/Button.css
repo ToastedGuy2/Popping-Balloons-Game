@@ -1,0 +1,57 @@
+.btn,
+.outline-btn {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.outline-btn {
+  border: 2px solid;
+  color: inherit;
+  margin: 7px 0px;
+}
+.primary-outline-btn {
+  border-color: #2c666e;
+  color: #2c666e;
+}
+.primary-outline-btn:hover,
+.primary-outline-btn:active {
+  background-color: #2c666e;
+  color: #fff;
+}
+.secondary-outline-btn {
+  border-color: #8b2635;
+  color: #8b2635;
+}
+.secondary-outline-btn:hover,
+.secondary-outline-btn:active {
+  background-color: #8b2635;
+  color: #fff;
+}
+
+.primary-btn {
+  background-color: #2c666e;
+  color: #f0edee;
+}
+.primary-btn:hover,
+.primary-btn:active {
+  background-color: #235158;
+}
+.secondary-btn {
+  background-color: #8b2635;
+  color: #f0edee;
+}
+.secondary-btn:hover,
+.secondary-btn:active {
+  background-color: #701f2b;
+}
+.light-btn {
+  background-color: #f0edee;
+  color: #0a090c;
+}
+.light-btn:hover {
+  background-color: #dad3d5;
+}
